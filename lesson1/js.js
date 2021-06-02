@@ -1,0 +1,200 @@
+// - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
+
+// let hello = "hello";
+// let okten = "owu";
+// let domen = "com";
+// let country = "ua";
+// let one = 1;
+// let ten = 10;
+// let minus = -999;
+// let onetwo = 123;
+// let pi = 3.14;
+// let ev = 2.7; 
+// let sixteen = 16;
+// let pravda = true;
+// let nepravda = false;
+
+//   Вивести кожну змінну за допомогою: console.log , alert, document.write
+
+// console.log(hello);
+// console.log(okten);
+// console.log(domen);
+// console.log(country);
+// console.log(one); 
+// console.log(ten); 
+// console.log(minus); 
+// console.log(onetwo); 
+// console.log(pi);
+// console.log(ev);
+// console.log(sixteen); 
+// console.log(pravda); 
+// console.log(nepravda); 
+
+// alert(hello);
+// alert(okten); 
+// alert(domen); 
+// alert(country); 
+// alert(one); 
+// alert(ten); 
+// alert(minus); 
+// alert (onetwo);
+// alert(pi);
+// alert(ev); 
+// alert(sixteen); 
+// alert(pravda); 
+// alert(nepravda);
+
+// document.write(hello);
+// document.write(okten); 
+// document.write(domen); 
+// document.write(country); 
+// document.write(one); 
+// document.write(ten); 
+// document.write(minus); 
+// document.write (onetwo);
+// document.write(pi);
+// document.write(ev); 
+// document.write(sixteen); 
+// document.write(pravda); 
+// document.write(nepravda);
+
+// - Переприсвоїти кожну змінну з завдання вище на будь які довільні значення.
+
+// let hello = "hi";
+// let okten = "okten";
+// let domen = "ua";
+// let country = "uk";
+// let one = 2;
+// let ten = 100;
+// let minus = -9;
+// let onetwo = 321;
+// let pi = 3.1415;
+// let ev = 2.84545484; 
+// let sixteen = 161;
+// let pravda = false;
+// let nepravda = true;
+
+
+//   Вивести кожну змінну за допомогою: console.log , alert, document.write
+
+// console.log(hello);
+// console.log(okten);
+// console.log(domen);
+// console.log(country);
+// console.log(one); 
+// console.log(ten); 
+// console.log(minus); 
+// console.log(onetwo); 
+// console.log(pi);
+// console.log(ev);
+// console.log(sixteen); 
+// console.log(pravda); 
+// console.log(nepravda); 
+
+// alert(hello);
+// alert(okten); 
+// alert(domen); 
+// alert(country); 
+// alert(one); 
+// alert(ten); 
+// alert(minus); 
+// alert (onetwo);
+// alert(pi);
+// alert(ev); 
+// alert(sixteen); 
+// alert(pravda); 
+// alert(nepravda);
+
+// document.write(hello);
+// document.write(okten); 
+// document.write(domen); 
+// document.write(country); 
+// document.write(one); 
+// document.write(ten); 
+// document.write(minus); 
+// document.write (onetwo);
+// document.write(pi);
+// document.write(ev); 
+// document.write(sixteen); 
+// document.write(pravda); 
+// document.write(nepravda);
+
+// - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. Зконкатенувати їх в одну змінну person.
+
+// let firstName = "Юрій";
+// let middleName = "Сергійович";
+// let lastName = "Чебан";
+
+
+// - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
+
+// let firstname = prompt("Enter name");
+// let middleName = prompt("Enter middleName");
+// let age = prompt("How old u?");
+
+
+//     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+
+// console.log("Вітаю") 
+// console.log(firstname);
+// console.log(middleName);
+// console.log(age);
+
+
+// - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+//   let a = 100; let b = '100'; let c = true;
+
+//   console.log(typeof(a));
+//   console.log(typeof(b));
+//   console.log(typeof(c));
+
+
+// - Поставити відповідний оператор в виразах що б вийшов відповідний результат.
+// В однакових виразаї не використовувати однакові оператори!!!
+//   5 ? 6 -> true
+//   5 ? 6 -> false
+//   5 ? 6 -> false
+//   5 ? 6 -> false
+//   10 ? 10 -> true
+//   10 ? 10 -> true
+//   10 ? 10 -> false
+//   10 ? 10 -> false
+//   10 ? 10 -> false
+//   123 ? '123' -> false
+//   123 ? '123' -> true
+
+
+// console.log(5 < 6);
+// console.log(5 > 6);
+// console.log(5 >= 6);
+// console.log(5 === 6);
+// console.log(10 >= 10);
+// console.log(10 === 10 );
+// console.log(10 < 10);
+// console.log(10 !== 10);
+// console.log(10 > 10);
+// console.log(123 === '123');
+// console.log(123 == '123');
+
+
+// Додатково:
+// - Подивіться на наступні вирази і спробуйте вгадати яким буде вивід в консоль. Перевірте себе.
+// console.log(132 > 100 && 45 < 12 ); -> false
+// console.log(34 > 33 && 23 < 90 ); -> true 
+// console.log(99 > 100 && 45 > 12 ); -> false 
+// console.log(132 > 100 || 45 < 12 ); -> true 
+// console.log(111 > 11 || 45 < 111 ); -> true 
+// console.log((111 > 11 || 45 < 111) && (132 > 100 || 45 < 12) ); -> true  
+// console.log((111 > 11 || 45 < 56) || (132 > 100 || 45 < 12) );  -> true 
+// console.log((132 > 100 && 45 < 12 ) && (132 > 100 || 45 < 12 ) ); -> false 
+// console.log((111 > 11 || 45 < 111) || (99 > 100 && 45 > 12 ));  -> true  
+// console.log(!!'-1');  
+// console.log(!!-1);   
+// console.log(!!'0');     
+// console.log(!!'null');    
+// console.log(!!'undefined');    
+// console.log(!!(3/'owu')); 
+// console.log((111 > 11 || 45 < 111) ||  !!'0');    
+// console.log((!!111 == !!11 || 45 < 111) && (99 > 100 && 45 > 12 ));
+
+
