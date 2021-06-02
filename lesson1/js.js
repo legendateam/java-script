@@ -124,7 +124,12 @@
 // let firstName = "Юрій";
 // let middleName = "Сергійович";
 // let lastName = "Чебан";
-
+// let person = {
+//     firstName: firstName,
+//     middleName: middleName,
+//     lastName: lastName
+// }
+// console.log(person)
 
 // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
 
@@ -135,10 +140,7 @@
 
 //     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
 
-// console.log("Вітаю") 
-// console.log(firstname);
-// console.log(middleName);
-// console.log(age);
+// console.log(`Привіт ${firstname} ${middleName}. Тобі ${age} років`)
 
 
 // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
