@@ -224,27 +224,27 @@
         // Если светофор красный - и машины есть вывести "стой и жди".
         // Если светофор в аварийном режиме вывести "делай что хочешь"!
 
-        // let lights = prompt("цвет светлофора");
-        // let isRoadClear = confirm("машины есть?");
+        let lights = prompt("цвет светлофора");
+        let isRoadClear = confirm("машины есть?");
 
-        // if (lights === "зеленый" && isRoadClear === true) {
-        //     alert("иди")
-        // }  else if (lights === "зеленый" && isRoadClear === false) {
-        //     alert ( "подожди пока нарушители проедут")
-        // }
-        // if (lights === "желтый" && isRoadClear === true) {
-        //     alert("жди")
-        // }  else if (lights === "желтый" && isRoadClear === false) {
-        //     alert ( "все равно жди")
-        // }
-        // if (lights === "красный" && isRoadClear === false) {
-        //     alert("все равно жди")
-        // }  else if (lights === "красный" && isRoadClear === true) {
-        //     alert ( "стой и жди")
-        // }
-        // else {
-        //     "делай что хочешь!"
-        // }
+        if (lights === "зеленый" && isRoadClear) {
+            alert("иди")
+        }  else if (lights === "зеленый" && !isRoadClear) {
+            alert ( "подожди пока нарушители проедут")
+        }
+        if (lights === "желтый" && isRoadClear === true) {
+            alert("жди")
+        }  else if (lights === "желтый" && isRoadClear === false) {
+            alert ( "все равно жди")
+        }
+        if (lights === "красный" && isRoadClear === false) {
+            alert("все равно жди")
+        }  else if (lights === "красный" && isRoadClear === true) {
+            alert ( "стой и жди")
+        }
+        else {
+            "делай что хочешь!"
+        }
     </script>
     <script src="main.js"></script>
 </body>
