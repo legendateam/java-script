@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// 1) створити функцію яка приймає масив та виводить його
+
+// function functionArr(item) {
+//     console.log(item)
+// };
+
+//  let arrFunc = functionArr([122, "a", true, "gam", "okten"]);
+
+
+// 2) створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попередню функцію.
+
+// function randomFunction(item) {
+//     let arr = [Math.floor(Math.random() * item)];
+//        return  arr;
+// };
+
+// let newArr = functionArr(randomFunction(100));
+
+// 3) створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+
+// function minNumber(one, two, three) {
+//     if(one < two && one < three){
+//         console.log(one);
+//     } else if(two < one && two < three) {
+//         console.log(two)
+//     } else if(three < two && three < one) {
+//         console.log(three)
+//     }
+// };
+
+// minNumber(177,30,69);
+
+// 4) створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+
+// function funcMax(one , two , three) {
+//         if ( one > two && one > three) {
+//             console.log(one)
+//         } else if( two > one && two > three) {
+//             console.log(two);
+//         } else if (three > one && three > two) {
+//             console.log(three)
+//         }
+// }
+// funcMax(43,2,199)
+
+// 5) створити функцію яка повертає найбільше число з масиву
+
+// function funcArrMax(item) {
+//     let max = item[0]
+//     for(const maximus of item) {
+//         if (maximus > max) {
+//             max = maximus
+//         };
+//     }
+//     return max
+// }
+// const max = funcArrMax([20,2,15,3,1,7,100,999,55,18])
+// console.log(max);
+
+// 6) створити функцію яка повертає найменьше число з масиву
+
+// function funcArrMin(item) {
+//     let min = item[0]
+//     for(const minimus of item) {
+//         if (minimus < min) {
+//             min = minimus
+//         };
+//     }
+//     return min
+// }
+// const min = funcArrMin([20,2,15,3,1,7,100,999,55,18])
+// console.log(min);
+
+// 7) створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його.
+
+// let arr = [70,2,8,15,25,93,63,4,18,1];
+
+// function sumaAllArr(item) {
+//     let indexzero = 0;
+//     for(const suma of item) {
+//         indexzero += suma;
+//     };
+//     return indexzero
+// };
+
+// let newArrSuma = sumaAllArr(arr);
+// console.log(newArrSuma)
+
+// 8) створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+
+// let arr = [70,2,8,15,25,93,63,4,18,1];
+
+// function sumaAllArr(item) {
+//     let indexzero = 0;
+//     for(const suma of item) {
+//         indexzero += suma;
+//     };
+//     return indexzero / 2 
+// };
+
+// let newArrSuma = sumaAllArr(arr);
+// console.log(newArrSuma)
+
+
+// 9) Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
+// EXAMPLE:
+// [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
+
+// let arr = [{name: "Vasy", age: 25}, {car: true, wife: false, age: 20, skill: "JS"}, {cpu: "intel", gpu: "nvidia",
+//  brand: "acer"}, {brand: "ford", model: "mondeo"}, {name: "Olya", age: 28, car: false}, {name:"Oleg", age: 24, car:false},
+// {name: "Yura", age: 33, car: true}, {name: "Solomiya", age:18, car: true}];
+
+// function keyObjectOfArr(item) {
+//     let ArrKey = []; 
+//     let sliceArr = "";
+//     for(const arrobject of item) {
+//         for(const key in arrobject) {
+//                 ArrKey.push(key);
+//                 sliceArr = ArrKey.splice(11, 17);
+//         };
+//     };
+//     return ArrKey;
+// };
+// let keysOfArrObject = keyObjectOfArr(arr);
+// console.log(keysOfArrObject)
+
+// 10) Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
+// EXAMPLE:
+// [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+
+// let arr = [{name: "Vasy", age: 25}, {car: true, wife: false, age: 20, skill: "JS"}, {cpu: "intel", gpu: "nvidia",
+//  brand: "acer"}, {brand: "ford", model: "mondeo"}, {name: "Olya", age: 28, car: false}, {name:"Oleg", age: 24, car:false},
+// {name: "Yura", age: 33, car: true}, {name: "Solomiya", age:18, car: true}];
+
+// function valueObjectWithArr(item) {
+//     let arrValue = [];
+//     for(const arrobject of item) {
+//         for(const value in arrobject) {
+//             arrValue.push(arrobject[value]);
+//         };
+//     };
+//     return arrValue
+// };
+
+// let valueArr = valueObjectWithArr(arr);
+// console.log(valueArr);
+
+// 11) створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
+//   EXAMPLE:
+//   [1,2,3,4]
+//   [2,3,4,5]
+//   результат
+//   [3,5,7,9]
+
+// let a = [1,2,3,4];
+// let b = [2,3,4,5];
+
+// function resultArr(a, b) {
+//     let result = [];
+//     for(let i = 0; i < a.length; i++) {
+//     result.push(a[i] + b[i]);
+// };
+//      return result;
+// };
+
+// let resultWithArr = resultArr(a, b)
+// console.log(resultWithArr);
+
+    </script>
+    
+</body>
+</html>
