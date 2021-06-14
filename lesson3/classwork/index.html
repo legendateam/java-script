@@ -1,36 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <!-- - створити функцію яка обчислює та повертає площу прямокутника висотою
-- створити функцію яка обчислює та повертає площу кола
-- створити функцію яка обчислює та повертає площу циліндру
-- створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
-- Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
-  EXAMPLE:
-  foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
-  foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
-  foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
 
-- Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
-Двожина масиву від 2 до 100
-EXAMPLE:
-[1,0,6,0,3] => [1,6,3,0,0]
-[0,1,2,3,4] => [1,2,3,4,0]
-[0,0,1,0]   => [1,0,0,0]
+  <script>
+    //     створити функцію яка обчислює та повертає площу прямокутника висотою
 
-- Дано список імен.
-let n1 = '    Harry       Potter      '
-let n2 = '    Ron       Whisley      '
-let n3 = '    Hermione       Granger      '
-Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
-let n1 = 'Harry Potter'
-let n2 = 'Ron Whisley'
-let n3 = 'Hermione Granger' -->
+    // function funcSrectangle(height, width) {
+    //     let a = height;
+    //     let b = width;
+    //     let s = a * b;
+    //     return s;
+    // }
+
+    // let Srectangle = funcSrectangle(20, 10);
+    // console.log(Srectangle)
+
+    // - створити функцію яка обчислює та повертає площу кола
+
+    // function funScircle(radius) {
+    //   let p = 3.14;
+    //   let r = radius;
+    //   let s = p * Math.pow(r,2);
+    //   return s;
+    // };
+
+    // let S_circle = funScircle(7);
+    // console.log(S_circle);
+
+    // - створити функцію яка обчислює та повертає площу циліндру
+
+    // function funcScylinder(height, radius) {
+    //   let h = height;
+    //   let r = radius;
+    //   let p = 3.14;
+    //   let s = 2*p*r*(r+h);
+    //   return s;
+    // };
+
+    // let Scylinder = funcScylinder(14, 7);
+    // console.log(Scylinder);
+
+    // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+
+    // function anyNumberMin_Max() {
+    //   let min = arguments[0];
+    //   let max = arguments[0];
+    //   for(const bred of arguments) {
+    //     if(min > bred) min = bred;
+    //     if(max < bred) max = bred; 
+    // };
+    //   console.log(max)
+    //   return min;
+    // };
+
+    // let max_min = anyNumberMin_Max(10,4,43,7,9,15,1,59,29,6,100,2,8,33);
+    // console.log(max_min);
+
+    // - Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+    //   EXAMPLE:
+    //   foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
+    //   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
+    //   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
+
+//     let a = [9, 8, 0, 4];
+//     let b = [9, 8, 0, 4];
+//     let c = [9, 8, 0, 4];
+
+
+// function arrReplaceNumber(arr, index) {
+//     if (index<arr.length-1) {                 
+//         let temp = arr[index];
+//         arr[index] = arr[index+1];
+//         arr[index+1] = temp ;
+//     }
+//     return arr
+// };
+
+  //  ------------------------- lenght -1 тут для того шоб коли ми будем по 3 індексу звератись в функції не було андефайнета тому шо вже правіше від четвірки нічого не має, 3 індекс то останій  
+
+//     let zero = arrReplaceNumber(a, 0);
+//     console.log(zero);
+
+//     let one = arrReplaceNumber(b, 1);
+//     console.log(one);
+
+//     let two = arrReplaceNumber(c, 2);
+//     console.log(two);
+
+    // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+    // Двожина масиву від 2 до 100
+    // EXAMPLE:
+    // [1,0,6,0,3] => [1,6,3,0,0]
+    // [0,1,2,3,4] => [1,2,3,4,0]
+    // [0,0,1,0]   => [1,0,0,0]
+
+    // function StartAnyNumberEndZero(number) {
+    //   let zero = [];
+    //   let numbers = [];
+    //   for(const numite of number) {
+    //     if (numite === 0) {
+    //       zero.push(numite)
+    //     } else
+    //     numbers.push(numite)
+    //   };
+    //   return numbers.concat(zero);
+    // };
+
+
+    // let elementZeroEnd = StartAnyNumberEndZero([0,1,100,41,0,15,23,0,14,2,52,83,0,66,1,78,99,0,50,7,0,33,83])
+    // console.log(elementZeroEnd)
+
+    // let elementZeroEnd2 = StartAnyNumberEndZero([0,1,0,41,0,15,23,0,14,2,0,83,0,66,0,0,99,0,50,7,0,0,83])
+    // console.log(elementZeroEnd2)
+
+    // - Дано список імен.
+    let n1 = '    Harry       Potter      '
+    let n2 = '    Ron       Whisley      '
+    let n3 = '    Hermione       Granger      '
+    // Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
+    // let n1 = 'Harry Potter'
+    // let n2 = 'Ron Whisley'
+    // let n3 = 'Hermione Granger'  
+
+    function normalValidName(names) {
+      let ab = [];
+      for(const name of names) {
+        if(name != undefined) {
+          let ac = ab.push(name);
+          if(typeof ab === "object")
+          ab.join(",");  
+        }
+      }
+      return ab
+    };
+
+    let usersnames = normalValidName(n1);
+    console.log(usersnames)
+
+  </script>
 </body>
+
 </html>
