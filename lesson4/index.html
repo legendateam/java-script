@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         1 створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+// створити пустий масив, наповнити його 10 об'єктами User
+
+// function Users(id, name, surname, email, phone) {
+//     this.id = id;
+//     this.name = name;
+//     this.surname = surname;
+//     this.email = email;
+//     this.phone = phone;
+// };
+
+// let arr = [
+//     new Users(1, "Maria", "Sepush", "maria.sepush@gmail.comm", "+(380)672085912"),
+//     new Users(2, "Anton", "Byrui", "antonbyrui@gmail.com", "+(380)677772431"),
+//     new Users(3, "Hanna", "Montana", "hanik.bunny@gmail.comm", "+(380)672055954"),
+//     new Users(4, "Yura", "Zoi", "asdasdasdasdas@gmail.com", "+(380)633373431"),
+//     new Users(5, "Oleg", "Zborivech", "oleg.zborig@gmail.comm", "+(380)502085912"),
+//     new Users(6, "Dimas", "Pavlichin", "agrfei@gmail.com", "+(380)677772431"),
+//     new Users(7, "Viktor", "Zepush", "viktor.zepush@gmail.comm", "+(380)939785912"),
+//     new Users(8, "Nastiya", "Kravchuk", "natyanagivator777@gmail.com", "+(380)687772431"),
+//     new Users(9, "Anna", "Pushkin", "anna.pushkin@gmail.comm", "+(380)532085555"),
+//     new Users(10, "Vladymyr", "Gogh", "vladymyr.gogh@gmail.com", "+(380)967762485"),
+// ];
+
+// console.log(arr);
+
+// 2 створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
+// створити пустий масив, наповнити його 10 об'єктами Client
+
+
+// class Client{
+//     constructor(id, name, surname, email, phone, order = []) {
+//         this.id = id;
+//         this.name = name;
+//         this.surname = surname;
+//         this.email = email;
+//         this.phone = phone;
+//         this.order = order;
+//     }
+// }
+
+// let arrClient = [
+//     new Client(1, "Maria", "Sepush", "maria.sepush@gmail.comm", "+(380)672085912", ["beer", "car", "coca-cola", "mars", "levada", "barilla", "luks", "whisky"]),
+//     new Client(2, "Anton", "Byrui", "antonbyrui@gmail.com", "+(380)677772431", ["beer", "car", "coca-cola", "chupa-chups", "whisky"]),
+//     new Client(3, "Tanya", "Kyleba", "tanya.kyleva@gmail.com", "+(380)638395320", ["biscuit", "trotilla", "kebab"]),
+//     new Client(4, "Yura", "Zoi", "asdasdasdasdas@gmail.com", "+(380)633373431", ["hot-dot", "french fries", "burger", "ice cream"]),
+//     new Client(5, "Oleg", "Zborivech", "oleg.zborig@gmail.comm", "+(380)502085912", ["ketchup" , "soi souce", "texas souce"]),
+//     new Client(6, "Dimas", "Pavlichin", "agrfei@gmail.com", "+(380)677772431", ["olive oil"]),
+//     new Client(7, "Viktor", "Zepush", "viktor.zepush@gmail.comm", "+(380)939785912", ["pepsi", "vodka"]),
+//     new Client(8, "Nastiya", "Kravchuk", "natyanagivator777@gmail.com", "+(380)687772431", ["parowki gril", "yogurt", "bike", "t-shirt", "jacket", "pants", "portmone", "parfurms","notebook","pc","smartphone"]),
+//     new Client(9, "Anna", "Pushkin", "anna.pushkin@gmail.comm", "+(380)532085555", ["car", "coca-cola", "mars", "levada", "barilla", "luks", "whisky"]),
+//     new Client(10, "Vladymyr", "Gogh", "vladymyr.gogh@gmail.com", "+(380)967762485", ["matroshka", "sapogi", "adidas shoes", "balalaika", "chipsters", "milk"]),
+// ];
+// console.log(arrClient);
+
+// 3 Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+// -- drive () - яка виводить в консоль "їдемо зі швидкістю {максимальна швидкість} на годину"
+// -- info () - яка виводить всю інформацію про автомобіль
+// -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
+// -- changeYear (newValue) - змінює рік випуску на значення newValue
+// -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
+
+// function Car(model, manufacturer, graduationyear, maxspeed, enginecapacity) {
+//     this.model = model;
+//     this.manufacturer = manufacturer; 
+//     this.graduationyear = graduationyear;
+//     this.maxspeed = maxspeed; 
+//     this.enginecapacity = enginecapacity;
+// }; 
+
+// let car = new Car("Dokker", "Renault", 2015, 160, 1.5);
+
+// Car.prototype.drive = function() {
+//     console.log(`їдемо зі швидкістю ${this.maxspeed} на годину`)
+// };
+
+// car.drive();
+
+// Car.prototype.info = function() {
+//     console.log(this.model, this.manufacturer, this.graduationyear, this.maxspeed, this.enginecapacity);
+// };
+
+// car.info();
+
+// Car.prototype.increaseMaxSpeed = function(newSpeed) {
+//      this.newSpeed = newSpeed + this.maxspeed;
+//      console.log(this.newSpeed);
+// };
+
+// car.increaseMaxSpeed(50);
+
+// Car.prototype.changeYear = function(newValue) {
+//     this.graduationyear = newValue;
+//     console.log(this.graduationyear);
+// };
+
+// car.changeYear(2021)
+
+// Car.prototype.AddDriver = function(driver) {
+//     this.driver = driver;
+// }
+// car.AddDriver({name: "Dimas", surname:"Ragushin", age: 23, experience: 2});
+// console.log(car);
+
+
+// 4 Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
+// -- drive () - яка виводить в консоль "їдемо зі швидкістю {максимальна швидкість} на годину"
+// -- info () - яка виводить всю інформацію про автомобіль
+// -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
+// -- changeYear (newValue) - змінює рік випуску на значення newValue
+// -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
+
+// class Car{
+//     constructor(model, manufacturer, graduationyear, maxspeed, enginecapacity) {
+//         this.model = model;
+//         this.manufacturer = manufacturer;
+//         this.graduationyear = graduationyear;
+//         this.maxspeed = maxspeed;
+//         this.enginecapacity = enginecapacity
+//     };
+
+//     drive() {
+//         console.log(`їдемо зі швидкістю ${this.maxspeed} на годину`);
+//     };
+
+//     info () {
+//         console.log(this.model, this.manufacturer, this.graduationyear, this.maxspeed, this.enginecapacity)
+//     };
+
+//     increaseMaxSpeed (newSpeed) {
+//       this.maxspeed = this.maxspeed + newSpeed;  
+//     };
+
+//     changeYear (newValue) {
+//         this.graduationyear = newValue;
+//     };
+
+//     addDriver(driver){
+//         this.driver = driver;
+//     };
+  
+// };
+
+// const car = new Car("X6", "BMW", 2016, 280, 3.0);
+// car.drive();
+// car.info();
+// car.increaseMaxSpeed(20);
+// car.changeYear(2021);
+// car.addDriver({name:"Vasya", lastname: "Pupkin", age: 18, wife: false});
+// console.log(car);
+
+// 5 Взяти масив з завдання 1.
+// - Відфільтрувати , залишивши тільки об'єкти з парними id
+
+// function Users(id, name, surname, email, phone) {
+//     this.id = id;
+//     this.name = name;
+//     this.surname = surname;
+//     this.email = email;
+//     this.phone = phone;
+// };
+
+// let arr = [
+//     new Users(5, "Oleg", "Zborivech", "oleg.zborig@gmail.comm", "+(380)502085912"),
+//     new Users(1, "Maria", "Sepush", "maria.sepush@gmail.comm", "+(380)672085912"),
+//     new Users(2, "Anton", "Byrui", "antonbyrui@gmail.com", "+(380)677772431"),
+//     new Users(3, "Hanna", "Montana", "hanik.bunny@gmail.comm", "+(380)672055954"),
+//     new Users(6, "Dimas", "Pavlichin", "agrfei@gmail.com", "+(380)677772431"),
+//     new Users(4, "Yura", "Zoi", "asdasdasdasdas@gmail.com", "+(380)633373431"),
+//     new Users(7, "Viktor", "Zepush", "viktor.zepush@gmail.comm", "+(380)939785912"),
+//     new Users(10, "Vladymyr", "Gogh", "vladymyr.gogh@gmail.com", "+(380)967762485"),
+//     new Users(8, "Nastiya", "Kravchuk", "natyanagivator777@gmail.com", "+(380)687772431"),
+//     new Users(9, "Anna", "Pushkin", "anna.pushkin@gmail.comm", "+(380)532085555"),
+// ];
+
+// let arrFilter = arr.filter(function (value) {
+//    return value.id%2 === 0
+// });
+
+// console.log(arrFilter);
+
+// - Відсортувати його по id. по зростанню
+
+// arr.sort(function(user, user2) {
+//     return user.id - user2.id;
+// });
+// console.log(arr);
+
+// - Відсортувати його по id. по спаданню
+
+// arr.sort(function(user, user2) {
+//     return user2.id - user.id;
+// });
+// console.log(arr);
+
+
+// 6. Взяти масив з завдання 2.
+//     Відсортувати його по кількості товарів в полі order. по спаданню
+
+// class Client{
+//     constructor(id, name, surname, email, phone, order = []) {
+//         this.id = id;
+//         this.name = name;
+//         this.surname = surname;
+//         this.email = email;
+//         this.phone = phone;
+//         this.order = order;
+//     }
+// }
+
+// let arrClient = [
+//     new Client(1, "Maria", "Sepush", "maria.sepush@gmail.comm", "+(380)672085912", ["beer", "car", "coca-cola", "mars", "levada", "barilla", "luks", "whisky"]),
+//     new Client(2, "Anton", "Byrui", "antonbyrui@gmail.com", "+(380)677772431", ["beer", "car", "coca-cola", "chupa-chups", "whisky"]),
+//     new Client(3, "Tanya", "Kyleba", "tanya.kyleva@gmail.com", "+(380)638395320", ["biscuit", "trotilla", "kebab"]),
+//     new Client(4, "Yura", "Zoi", "asdasdasdasdas@gmail.com", "+(380)633373431", ["hot-dot", "french fries", "burger", "ice cream"]),
+//     new Client(5, "Oleg", "Zborivech", "oleg.zborig@gmail.comm", "+(380)502085912", ["ketchup" , "soi souce", "texas souce"]),
+//     new Client(6, "Dimas", "Pavlichin", "agrfei@gmail.com", "+(380)677772431", ["olive oil"]),
+//     new Client(7, "Viktor", "Zepush", "viktor.zepush@gmail.comm", "+(380)939785912", ["pepsi", "vodka"]),
+//     new Client(8, "Nastiya", "Kravchuk", "natyanagivator777@gmail.com", "+(380)687772431", ["parowki gril", "yogurt", "bike", "t-shirt", "jacket", "pants", "portmone", "parfurms","notebook","pc","smartphone"]),
+//     new Client(9, "Anna", "Pushkin", "anna.pushkin@gmail.comm", "+(380)532085555", ["car", "coca-cola", "mars", "levada", "barilla", "luks", "whisky"]),
+//     new Client(10, "Vladymyr", "Gogh", "vladymyr.gogh@gmail.com", "+(380)967762485", ["matroshka", "sapogi", "adidas shoes", "balalaika", "chipsters", "milk"]),
+// ];
+
+// arrClient.sort(function(item, item2){
+//     return item2.order.length - item.order.length;
+// });
+
+// console.log(arrClient);
+
+ 
+    </script>
+</body>
+</html>
