@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="main_header">This is page for task2</h1>
+ <ul>
+     <li class="linkList listElement1"><a href="#">link1</a></li>
+     <li class="linkList listElement2"><a href="#">link2</a></li>
+     <li class="linkList listElement3"><a href="#">link3</a></li>
+ </ul>
+ <h3 class="sub-header">content 1 segment</h3>
+ <div class="content_1">
+     <p class="text_segment text1">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet at autem cumque distinctio,
+         dolorem
+         eligendi eum eveniet facere inventore ipsa minus pariatur repellendus sequi sit veniam voluptatum.
+         Fugit,
+         soluta?</p>
+ </div>
+ <h3 class="sub-header">content 2 segment</h3>
+ <div class="content_2">
+     <p class="text_segment text2">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae, exercitationem modi mollitia
+         omnis
+         possimus quam rerum sequi temporibus tenetur! Accusantium ad commodi eveniet excepturi laboriosam quis
+         quisquam sint temporibus.</p>
+ </div> 
+
+
+ <form action="index2.html">
+     <input type="text">
+ </form>
+
+ <script>
+//  Взяти файл template_2.html та працювати в ньому
+//     1) Напишіть код, який :
+//        a) змінює колір тексту елемнту з ід main_header на назву групи в якій ви вчитесь (mon-year);
+
+// let changeColorTextOfHeader = document.getElementById("main_header");
+// let h1 = document.getElementsByTagName("h1")
+// changeColorTextOfHeader.style.backgroundColor = "yellow";
+// changeColorTextOfHeader.innerText = "apr-2021-tuesday-chanel"
+
+
+//        b) робить шириниу елементу ul 400px
+
+// let widthTagUl =  document.getElementsByTagName("ul");
+// for (const element of widthTagUl) {
+//     element.style.width = "400px";
+// };
+ 
+//        c) робить шириниу всіх елементів з класом linkList шириною 50%
+
+// let widthElementsClassLinkList = document.getElementsByClassName("linklist");
+// for (const element of widthElementsClassLinkList) {
+//   element.style.width = "50%";
+// };
+ 
+//        d) отримує текст який зберігається в елементі з класом listElement2
+
+// let textOFlistElement2 = document.querySelector("ul li.listElement2")
+// console.log(textOFlistElement2);
+
+//        e) отримує всі елементи li та змінює ім колір фону на сірий
+
+// let getElementLi = document.getElementsByTagName("li");
+// for (const element of getElementLi) {
+//     element.style.backgroundColor = "green"
+// }
+
+//        f) отримує всі елементи 'a' та додає їм клас anchor
+
+
+// let aTegAddClass = document.getElementsByTagName("a");
+
+// for (const element of aTegAddClass) {
+//     element.classList.add("anchor");
+//     console.log(element); 
+// };
+
+//        g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
+
+// let aLink3 = document.getElementsByTagName("a")
+// for (const element of aLink3) {
+//     if(element.textContent === "link3") {
+//         element.style.fontSize = "40px"
+//     };
+// };
+
+//        h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
+
+// let aAllAddClass = document.getElementsByTagName("a");
+// for (const a of aAllAddClass) {
+//   a.classList.add("element_XXX");
+//   a.textContent = "XXX"
+// };
+
+//        i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
+
+// let promt = prompt("колір фону sub-header")
+// let subHeader = document.getElementsByClassName("sub-header");
+// for (const element of subHeader) {
+//     element.style.backgroundColor = promt;
+// };
+
+//        j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
+
+// let promt2 = prompt("колір sub-header лише у випаду якщо текст елементу = content 2 segment")
+// let subHeader2 = document.getElementsByClassName("sub-header");
+// for (const element of subHeader2) {
+//   if(element.textContent === "content 2 segment") {
+//       element.style.backgroundColor = promt2
+//   }
+// };
+
+//        k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
+
+// let promt3 = prompt("довільний текст");
+// let classContent_1 = document.getElementsByClassName("content_1");
+// for (const element of classContent_1) {
+//     element.textContent = promt3;
+// };
+
+//        l) отримати елементи p та змінити їм padding на 20px
+
+// let allPchangePadding = document.getElementsByTagName("p");
+// for (const element of allPchangePadding) {
+//   element.style.padding = "20px"
+// };
+
+
+//        m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year)  
+
+// let elementText2 = document.getElementsByClassName("text2 ");
+// for (const element of elementText2) {
+//   element.textContent = "tuesday-2021"  
+// };
+
+
+
+//    2. Створити форму з інпутом для введення ім'я, та action="index2.html".
+//    При відправці данних з форми, зберігати ім'я в localstorage, та переходити на index2.html.
+//    На index2.html виводити записане в localstorage ім'я в div
+ 
+
+
+//    3. Імітуємо наповнення інтернет магазину товарами :
+//    Створити форму з наступними полями :
+//    - назва товару
+//    - кількість товару
+//    - ціна товару
+//    - картинка товару (посилання з інтернету)
+//    Зберігати товари в масив в локалсорадж. При збережені товару з форми, action не повинно відбуватись.
+//    створити елемент <a href='list.html'> На сторінку товарів</a>, та list.html, при переході на який відобразити на сторінці всі товари.
+//    На сторінці  list.html побудувати кнопку яка видаляє всі товари з корзини та локалстораджа.
+ </script>
+   
+</body>
+</html>
