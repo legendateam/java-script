@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="name"></div>
+    <div id="number"></div>
+    <div id="price"></div>
+    <div><img alt="" id="img"></div>
+        <button id="delete">DeleteAll</button>
+
+    <script>
+        let name = document.getElementById("name");
+        let number = document.getElementById("number");
+        let price = document.getElementById("price");
+        let img = document.getElementById("img");
+
+        let key =  localStorage.getItem("key");
+        let parse = JSON.parse(key);
+
+        for (const element of parse) {
+          name.innerHTML = `<h1>Ваш товар ${element.name} в корзині</h1>`; 
+          number.innerHTML = `<h2>Кількість товару: ${element.number}</h2>`; 
+          price.innerHTML = `<strong>Ціна ${element.price}<strong>`; 
+          img.setAttribute("src", element.img)
+        };
+
+        let deleteAll = document.getElementById("delete");
+        
+        deleteAll.onclick = () => {
+            localStorage.clear();
+            name.innerHTML = "";
+            number.innerHTML = "";
+            price.innerHTML = "";
+            img.removeAttribute("src")
+        };
+    </script>
+</body>
+</html>

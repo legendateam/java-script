@@ -7,8 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <p></p>
+    <div id="localName">
     </div>
+
+    <script>
+     let localitem = localStorage.getItem("Name");
+
+     let id = document.getElementById("localName");
+  id.innerText= localitem
+
+console.log(id);
+
+    </script>
 </body>
 </html>
