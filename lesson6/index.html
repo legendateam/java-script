@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <!-- <body>
-        <div id="content"></div>
+
+    <body>
+        <!-- <div id="content"></div>
         <h1>Правила бойцовского клуба</h1>
         <div id="wrap">
             <div class="rules rule1">
@@ -45,112 +48,150 @@
                 <h2>Восьмое и последнее правило Бойцовского клуба.</h2>
                 <p>Новичок обязан принять бой.</p>
             </div>
-        </div> -->
+        </div>  -->
 
         <script>
-//             1 За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement.
-//    Вставити цей блок на сторінку
-// 2 За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement.
-//    Блок з адресою зробити окремим блоком, з блоками для кожної властивості
-
-// let users = [{
-//   name: 'vasya',
-//   age: 31,
-//   status: false,
-//   address: { city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1 }
-// }, {
-//   name: 'petya',
-//   age: 30,
-//   status: true,
-//   address: { city: 'New York', country: 'USA', street: 'East str', houseNumber: 21 }
-// }, {
-//   name: 'kolya',
-//   age: 29,
-//   status: true,
-//   address: { city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78 }
-// }, {
-//   name: 'olya',
-//   age: 28,
-//   status: false,
-//   address: { city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56 }
-// }, {
-//   name: 'max',
-//   age: 30,
-//   status: true,
-//   address: { city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39 }
-// }, {
-//   name: 'anya',
-//   age: 31,
-//   status: false,
-//   address: { city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5 }
-// }, {
-//   name: 'oleg',
-//   age: 28,
-//   status: false,
-//   address: { city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90 }
-// }, {
-//   name: 'andrey',
-//   age: 29,
-//   status: true,
-//   address: { city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33 }
-// }, {
-//   name: 'masha',
-//   age: 30,
-//   status: true,
-//   address: { city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1 }
-// }, {
-//   name: 'olya',
-//   age: 31,
-//   status: false,
-//   address: { city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4 }
-// }, {
-//   name: 'max',
-//   age: 31,
-//   status: true,
-//   address: { city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45 }
-// }];
+            //             1 За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement.
+            //    Вставити цей блок на сторінку
 
 
+            // let users = [{
+            //   name: 'vasya',
+            //   age: 31,
+            //   status: false,
+            //   address: { city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1 }
+            // }, {
+            //   name: 'petya',
+            //   age: 30,
+            //   status: true,
+            //   address: { city: 'New York', country: 'USA', street: 'East str', houseNumber: 21 }
+            // }, {
+            //   name: 'kolya',
+            //   age: 29,
+            //   status: true,
+            //   address: { city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78 }
+            // }, {
+            //   name: 'olya',
+            //   age: 28,
+            //   status: false,
+            //   address: { city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56 }
+            // }, {
+            //   name: 'max',
+            //   age: 30,
+            //   status: true,
+            //   address: { city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39 }
+            // }, {
+            //   name: 'anya',
+            //   age: 31,
+            //   status: false,
+            //   address: { city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5 }
+            // }, {
+            //   name: 'oleg',
+            //   age: 28,
+            //   status: false,
+            //   address: { city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90 }
+            // }, {
+            //   name: 'andrey',
+            //   age: 29,
+            //   status: true,
+            //   address: { city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33 }
+            // }, {
+            //   name: 'masha',
+            //   age: 30,
+            //   status: true,
+            //   address: { city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1 }
+            // }, {
+            //   name: 'olya',
+            //   age: 31,
+            //   status: false,
+            //   address: { city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4 }
+            // }, {
+            //   name: 'max',
+            //   age: 31,
+            //   status: true,
+            //   address: { city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45 }
+            // }];
 
-// 3 Є масив котрий характеризує правила.
-//    Створити скрипт який ітерує цей масив, та робить кожне правило в окремому блоці.
-//    При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
-//    Результатом відпрацювання скріпта повинна бути така ж структура яка міститься в файлі rules.html
 
-// 			let rules = [
-// 				{
-// 					title: 'Первое правило Бойцовского клуба.',
-// 					body: 'Никому не рассказывать о Бойцовском клубе.'
-// 				},
-// 				{
-// 					title: 'Второе правило Бойцовского клуба.',
-// 					body: 'Никогда никому не рассказывать о Бойцовском клубе.'
-// 				},
-// 				{
-// 					title: 'Третье правило Бойцовского клуба.',
-// 					body: 'В схватке участвуют только двое.'
-// 				},
-// 				{
-// 					title: 'Четвертое правило Бойцовского клуба.',
-// 					body: 'Не более одного поединка за один раз.'
-// 				},
-// 				{
-// 					title: 'Пятое правило Бойцовского клуба.',
-// 					body: 'Бойцы сражаются без обуви и голые по пояс.'
-// 				},
-// 				{
-// 					title: 'Шестое правило Бойцовского клуба.',
-// 					body: 'Поединок продолжается столько, сколько потребуется.'
-// 				},
-// 				{
-// 					title: 'Седьмое правило Бойцовского клуба.',
-// 					body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
-// 				},
-// 				{
-// 					title: 'Восьмое и последнее правило Бойцовского клуба.',
-// 					body: 'Новичок обязан принять бой.'
-// 				}
-// 			];
-        </script>
-</body>
+            // for (const user of users) {
+            //         let element = document.createElement("div");
+            //      element.innerText = `Name: ${user.name}, age: ${user.age}, status - ${user.status}, address: ${user.address.city},
+            //       Country - ${user.address.country}, street - ${user.address.street} / ${user.address.houseNumber}`
+            //      document.body.appendChild(element)
+            // };
+
+
+            // 2 За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement.
+            //    Блок з адресою зробити окремим блоком, з блоками для кожної властивості
+
+            // for (const user of users) {
+            //     let div = document.createElement("div");
+            //     let address = document.createElement("div");
+            //     let country =  document.createElement("div");
+            //     let street =  document.createElement("div");
+            //     let housenumber =  document.createElement("div");
+            //     div.innerText = user.name, user.age, user.status;
+            //     country.innerText = user.address.country;
+            //     street.innerText = user.address.street;
+            //     housenumber.innerText = user.address.houseNumber;
+            //     address.appendChild(country).appendChild(street).appendChild(housenumber);
+            //     div.appendChild(address)
+            //     document.body.appendChild(div);
+            // };
+
+
+            // 3 Є масив котрий характеризує правила.
+            //    Створити скрипт який ітерує цей масив, та робить кожне правило в окремому блоці.
+            //    При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
+            //    Результатом відпрацювання скріпта повинна бути така ж структура яка міститься в файлі rules.html
+
+        //     let rules = [{
+        //             title: 'Первое правило Бойцовского клуба.',
+        //             body: 'Никому не рассказывать о Бойцовском клубе.'
+        //         },
+        //         {
+        //             title: 'Второе правило Бойцовского клуба.',
+        //             body: 'Никогда никому не рассказывать о Бойцовском клубе.'
+        //         },
+        //         {
+        //             title: 'Третье правило Бойцовского клуба.',
+        //             body: 'В схватке участвуют только двое.'
+        //         },
+        //         {
+        //             title: 'Четвертое правило Бойцовского клуба.',
+        //             body: 'Не более одного поединка за один раз.'
+        //         },
+        //         {
+        //             title: 'Пятое правило Бойцовского клуба.',
+        //             body: 'Бойцы сражаются без обуви и голые по пояс.'
+        //         },
+        //         {
+        //             title: 'Шестое правило Бойцовского клуба.',
+        //             body: 'Поединок продолжается столько, сколько потребуется.'
+        //         },
+        //         {
+        //             title: 'Седьмое правило Бойцовского клуба.',
+        //             body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
+        //         },
+        //         {
+        //             title: 'Восьмое и последнее правило Бойцовского клуба.',
+        //             body: 'Новичок обязан принять бой.'
+        //         }
+        //     ];
+
+        //     let div = document.createElement("div");
+        //     div.setAttribute("id", "wrap")
+
+        //     for (let i = 0; i < rules.length; i++) {
+        //         const rule = rules[i];
+        //         let titlebody = document.createElement("div");
+        //         titlebody.classList.add("rules");
+        //         titlebody.classList.add(`${i+1}`)
+        //         titlebody.innerHTML = `<h2>${rule.title}</h2> <p>${rule.body}</p>`;
+        //         div.appendChild(titlebody);
+        //         document.body.appendChild(div);
+        //     }
+        // </script>
+    </body>
+
 </html>
