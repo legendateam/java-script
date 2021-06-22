@@ -25,177 +25,174 @@
 
     <script>
 
-        // function iwakeUP(gotUP) {
-        //     return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             if (gotUP) {
-        //                 resolve("встав з ліжка")
-        //             } else {
-        //                 reject("Полінився встати з ліжка, краще ще полежу")
-        //             }
-        //         }, 800)
-        //     })
-        // }
+        function iwakeUP(gotUP) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (gotUP) {
+                        resolve("встав з ліжка")
+                    } else {
+                        reject("Полінився встати з ліжка, краще ще полежу")
+                    }
+                }, 800)
+            })
+        }
 
-        // function memes(memesJS) {
-        //     return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             if (memesJS) {
-        //                 resolve("Меми на тематику JS, дуже веселі, бідняли мені настрій");
-        //             } else {
-        //                 reject("Не хочу я ніяких мемів, не буду дивитись")
-        //             }
-        //         }, 1000)
-        //     })
+        function memes(memesJS) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (memesJS) {
+                        resolve("Меми на тематику JS, дуже веселі, бідняли мені настрій");
+                    } else {
+                        reject("Не хочу я ніяких мемів, не буду дивитись")
+                    }
+                }, 1000)
+            })
 
-        // }
-
-
-        // function breakfast(preparation) {
-        //    return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             if (preparation) {
-        //                 resolve("Я приготував хороший сніданок, смачно")
-        //             } else {
-        //                 reject("Нічого не зробив, буду голодний")
-        //             }
-        //         }, 2000)
-        //     })
-        // }
-
-        // function waitingBus(busGoJob) {
-        //    return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             if (busGoJob) {
-        //                 resolve("Маршрутка приїхала, їду на роботу")
-        //             } else {
-        //                 reject("Ех, немає транспорту, йду до дому")
-        //             }
-        //         }, 2500)
-        //     })
-
-        // }
-
-        // function scandelivery(route) {
-        //    return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             if (route) {
-        //                 resolve("Сканую доставки до свого маршрутного листа")
-        //             } else {
-        //                 reject("Мені вже логісти засканували доставки")
-        //             }
-        //         }, 2500)
-        //     })
-        // }
-
-        // function waitTrollebus(toTheAre) {
-        //    return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             if (toTheAre) {
-        //                 resolve("Тролейбус приїхав і я успішно їду на район")
-        //             } else {
-        //                 reject("Нема тролейбуса, нема роботи")
-        //             }
-        //         }, 2500)
-        //     })
-
-        // }
-
-        // function spreaddelivery(deliveryDone) {
-        //   return  new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             if (deliveryDone) {
-        //                 resolve("Доставляю доставки")
-        //             } else {
-        //                  reject("Не можу доставляти доставки, телефон заглючив")
-        //             }
-        //         }, 1000)
-        //     })
-
-        // }
-
-        // function goSuperMarket(silpo) {
-        //     return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             if (silpo) {
-        //                 resolve("Купив продуктів")
-        //             } else {
-        //                 reject("no money, no honey")
-        //             }
-        //         }, 1500)
-        //     })
-
-        // }
-
-        // function goHome(home) {
-        //    return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             if (home) {
-        //                 resolve("Прийшов додому")
-        //             } else {
-        //                 reject("Вирішив погуляти")
-        //             }
-        //         }, 800)
-
-        //     })
-
-        // }
-
-        // function lunch(preparation) {
-        //     return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             if (preparation) {
-        //                 resolve("Приготував успішно обід, смачно")
-        //             } else {
-        //                 reject("Це жах, я голодний")
-        //             }
-        //         }, 1500)
-        //     })
+        }
 
 
-        // }
+        function breakfast(preparation) {
+           return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (preparation) {
+                        resolve("Я приготував хороший сніданок, смачно")
+                    } else {
+                        reject("Нічого не зробив, буду голодний")
+                    }
+                }, 2000)
+            })
+        }
 
-        // function lessonDeveloper(lesson) {
-        //    return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             if (lesson) {
-        //                 resolve("Переглянув лекцію")
-        //             } else {
-        //                 reject("Не дивився нічого")
-        //             }
-        //         }, 3000)
-        //     })
+        function waitingBus(busGoJob) {
+           return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (busGoJob) {
+                        resolve("Маршрутка приїхала, їду на роботу")
+                    } else {
+                        reject("Ех, немає транспорту, йду до дому")
+                    }
+                }, 2500)
+            })
 
-        // }
+        }
 
-        // function WentToTtheShower(shower) {
-        //    return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             if (shoer) {
-        //                 resolve("Включили теплу воду, я помився")
-        //             } else {
-        //                 reject("Нема води")
-        //             }
-        //         }, 1000)
-        //     })
+        function scandelivery(route) {
+           return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (route) {
+                        resolve("Сканую доставки до свого маршрутного листа")
+                    } else {
+                        reject("Мені вже логісти засканували доставки")
+                    }
+                }, 2500)
+            })
+        }
 
-        // }
+        function waitTrollebus(toTheAre) {
+           return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (toTheAre) {
+                        resolve("Тролейбус приїхав і я успішно їду на район")
+                    } else {
+                        reject("Нема тролейбуса, нема роботи")
+                    }
+                }, 2500)
+            })
 
-        // function goToSleep(sleep) {
-        //    return new Promise((resolve, reject) => {
-        //         setTimeout(() => {
-        //             if (sleep) {
-        //                 resolve("Лягаю спати");
-        //             } else {
-        //                 reject("Не буду зараз спати, буду сидіти в ноуті цілу нічь")
-        //             }
-        //         }, 500)
-        //     })
+        }
 
-        // }
+        function spreaddelivery(deliveryDone) {
+          return  new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (deliveryDone) {
+                        resolve("Доставляю доставки")
+                    } else {
+                         reject("Не можу доставляти доставки, телефон заглючив")
+                    }
+                }, 1000)
+            })
+
+        }
+
+        function goSuperMarket(silpo) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (silpo) {
+                        resolve("Купив продуктів")
+                    } else {
+                        reject("no money, no honey")
+                    }
+                }, 1500)
+            })
+
+        }
+
+        function goHome(home) {
+           return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (home) {
+                        resolve("Прийшов додому")
+                    } else {
+                        reject("Вирішив погуляти")
+                    }
+                }, 800)
+
+            })
+
+        }
+
+        function lunch(preparation) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (preparation) {
+                        resolve("Приготував успішно обід, смачно")
+                    } else {
+                        reject("Це жах, я голодний")
+                    }
+                }, 1500)
+            })
 
 
-        console.log("*********************************");
+        }
+
+        function lessonDeveloper(lesson) {
+           return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (lesson) {
+                        resolve("Переглянув лекцію")
+                    } else {
+                        reject("Не дивився нічого")
+                    }
+                }, 3000)
+            })
+
+        }
+
+        function WentToTtheShower(shower) {
+           return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (shoer) {
+                        resolve("Включили теплу воду, я помився")
+                    } else {
+                        reject("Нема води")
+                    }
+                }, 1000)
+            })
+
+        }
+
+        function goToSleep(sleep) {
+           return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (sleep) {
+                        resolve("Лягаю спати");
+                    } else {
+                        reject("Не буду зараз спати, буду сидіти в ноуті цілу нічь")
+                    }
+                }, 500)
+            })
+
+        }
 
         // iwakeUP(true).then(value => {
         //     console.log(value);
@@ -236,7 +233,7 @@
         // .catch(reason => console.log(reason));
 
 
-        console.log("__________________________________");
+// ----------------------------------------------------------------------------------
 
         // iwakeUP(true)
         // .then(value => {
@@ -257,7 +254,7 @@
         // })
         // .then(value4 => {
         //     console.log(value4)
-        //     return waitTrollebus;
+        //     return waitTrollebus(true);
         // })
         // .then(value5 => {
         //     console.log(value5);
@@ -285,27 +282,40 @@
         // })
         // .catch(reason => console.log(reason))
 
-
-        console.log("--------------------------------------");
+// -------------------------------------------------------------
 
         // async function myDay() {
         //     try {
-        //         let iwakeup = await iwakeUP(true);
+        //     let iwakeup = await iwakeUP(true);
+        //     console.log(iwakeup);
         //     let afterUp = await memes(true);
+        //     console.log(afterUp);
         //     let afteMmemes = await breakfast(true);
+        //     console.log(afteMmemes);
         //     let afterBreakfast = await waitingBus(true);
+        //     console.log(afterBreakfast);
         //     let afterWaitingBus = await scandelivery(true);
-        //     let afterScan = await waitTrollebus(true)
+        //     console.log(afterWaitingBus);
+        //     let afterScan = await waitTrollebus(true);
+        //     console.log(afterScan);
         //     let afterWaitinElectroBus = await spreaddelivery(true);
+        //     console.log(afterWaitinElectroBus);
         //     let afterDelivery = await goSuperMarket(true);
+        //     console.log(afterDelivery);
         //     let afterSilp = await goHome(true);
+        //     console.log(afterSilp);
         //     let afterIamHome = await lunch(true);
+        //     console.log(afterIamHome);
         //     let afterLunch = await lessonDeveloper(true);
+        //     console.log(afterLunch);
         //     let afterListeningLesson = await goToSleep(true);
+        //     console.log(afterListeningLesson);
         //     } catch (e) {
         //         console.log(e);
         //     }
         // };
+
+        // myDay()
     </script>
 
 </body>
