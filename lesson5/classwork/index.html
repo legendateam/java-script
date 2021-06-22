@@ -47,7 +47,7 @@
        
          <div>
              <p>Кількість</p>
-            <input type="text" name="NumberItems" >
+            <input type="number" name="NumberItems" >
          </div>
         
          <div>
@@ -196,23 +196,23 @@
 //    створити елемент <a href='list.html'> На сторінку товарів</a>, та list.html, при переході на який відобразити на сторінці всі товари.
 //    На сторінці  list.html побудувати кнопку яка видаляє всі товари з корзини та локалстораджа.
 
-// let form = document.forms.main_form;
-// let nameInput = form.name;
-// let NumberItemsInput = form.NumberItems;
-// let priceInput = form.price;
-// let imgInput = form.img;
+let form = document.forms.main_form;
+let nameInput = form.name;
+let NumberItemsInput = form.NumberItems;
+let priceInput = form.price;
+let imgInput = form.img;
 
-// form.addEventListener("submit", (event) => {
-//     event.preventDefault();
-//     let arr = [{
-//         name: nameInput.value,
-//         number: NumberItemsInput.value,
-//         price: priceInput.value,
-//         img: imgInput.value
-//     }];
-//     let jsonARR = JSON.stringify(arr);
-//     let localca = localStorage.setItem("key", jsonARR)
-// });   
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let arr = [{
+        name: nameInput.value,
+        number: NumberItemsInput.value,
+        price: priceInput.value,
+        img: imgInput.value
+    }];
+    let jsonARR = JSON.stringify(arr);
+    let localca = localStorage.setItem("key", jsonARR)
+});   
 
  </script>
    
